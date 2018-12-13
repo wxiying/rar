@@ -1,0 +1,167 @@
+.max-width {
+	width: 100%;
+	background: #2e2f2a;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+}
+
+.head {
+	max-width: 1000px;
+	margin: 0 auto;
+	min-width: 300px;
+	position: relative;
+}
+
+.head h1 {
+	float: left;
+	height: 58px;
+	margin: 10px 0 8px 0;
+	width: 171px;
+}
+
+.head h1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.head .nav {
+	float: right;
+	padding-right: 19px;
+}
+
+.head .nav li {
+	float: left;
+	height: 80px;
+	line-height: 80px;
+}
+
+.head .nav li a {
+	display: block;
+	padding: 0 18px;
+	color: #fffbec;
+	font-size: 1.4em;
+}
+.head .nav li.active a{
+	background: rgba(255, 255, 255, .2);
+}
+.head .nav li a:hover {
+	background: rgba(255, 255, 255, .2);
+}
+
+
+/*按钮正常显示*/
+
+.head p {
+	display: none;
+	float: right;
+}
+
+.head p:first-of-type {
+	font-size: 4.2em;
+	color: #fff3ff;
+	height: 80px;
+	line-height: 80px;
+	position: absolute;
+	left: 50%;
+    top: 0;
+    transform: translate(-50%,0);
+	font-family: simsun;
+}
+
+.head #menu {
+	/*width: 120px;
+	height: 40px;*/
+	padding: 0 14px;
+	border: 1px solid #666666;
+	border-radius: 3px;
+	margin-top: 19px;
+	font-size: 17px;
+	color: #fdfffc;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.head p:last-of-type:hover {
+	background: rgba(255, 255, 255, .2);
+}
+
+.head p:last-of-type span {
+	display: inline-block;
+	width: 25px;
+	height: 3px;
+	background: #fdfffc;
+	margin-left: 12px;
+	position: relative;
+	margin-bottom: 3px;
+}
+
+.head p:last-of-type span::before {
+	display: block;
+	width: 25px;
+	height: 3px;
+	content: '';
+	background: #fdfffc;
+	position: absolute;
+	left: 0;
+	top: -8px;
+}
+
+.head p:last-of-type span::after {
+	display: block;
+	width: 25px;
+	height: 3px;
+	content: '';
+	background: #fdfffc;
+	position: absolute;
+	left: 0;
+	top: 8px;
+}
+
+
+/*隐藏导航显示*/
+
+.nav-hidden {
+	width: 100%;
+	border: 3px solid #cccccc;
+	border-left: 0;
+	border-right: 0;
+	background: #2e2f2a;
+	display: none;
+}
+
+.nav-hidden li {
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	width: calc(12.5% - 10px);
+	margin-right: 10px;
+}
+
+.nav-hidden li:last-of-type {
+	width: 12.5%;
+	margin-right: 0;
+}
+
+.nav-hidden li a {
+	color: #f9fafe;
+	font-size: 16px;
+	display: block;
+	text-align: center;
+}
+
+.nav-hidden li a:hover {
+	color: #fd982c;
+	background: rgba(255, 255, 255, .2);
+}
+
+
+
+/*footer脚部开始*/
+.footer{width:100%;background:#333333;}
+.footer .footer-min{width:97.333333333%;max-width:1000px;margin:0 auto;color:#f6fffa;font-size:1.2em;display:flex;flex-wrap:wrap;margin-top:43px;}
+.footer .footer-min li{width:25%;line-height:31px;padding:48px 0;}
+.footer .footer-min li:nth-of-type(3) a{width:77px;height:22px;display:inline-block;vertical-align:middle;}
+/*footer脚部结束*/

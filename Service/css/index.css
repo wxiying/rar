@@ -1,0 +1,34 @@
+.main{max-width:1030px;margin:0 auto;display:flex;padding:40px 15px 0 15px;margin-top:80px;}
+.main #list{width:26.504854%;border-right:1px solid #bababa;padding-right:17px;box-sizing:border-box;
+		height:326px;}
+.main #list li{border-bottom:4px solid transparent;line-height:77px;cursor:pointer;font-size:2.2em;position:relative;}
+.main #list li span{display:inline-block;width:40px;height:31px;margin:0 10px 0 7.8125%;position:relative;}
+.main #list li a{display:block;width:100%;height:100%;position:absolute;left:0;top:0;z-index:2;}
+
+.main #list li span img{position:absolute;left:0;top:0;}
+.main #list li span img:last-of-type{opacity:0;}
+
+/*active  normal*/
+.main #list li.active{border-bottom:4px solid #fa9634;}
+.main #list li.active span img:last-of-type{opacity:1;}
+.normal{border-bottom:4px solid transparent;}
+
+/*鼠标经过*/
+.main #list li:hover{border-bottom:4px solid #fa9634;}
+.main #list li:hover span img:last-of-type{opacity:1;}
+
+.main .content{width:84.300970%;padding-left:48px;box-sizing:border-box;padding-bottom:79px;padding-top:4px;}
+.main .content .chara dl dt{line-height:53px;color:#fa9634;font-size:18px;font-weight:bold;}
+.main .content .chara dl dd{text-indent:33px;line-height:30px;color:#000000;font-size:16px;}
+.main .content .chara dl dd.bold{text-indent:0;font-weight:bold;font-size:20px;padding-left:33px;}
+.main .content .chara dl dd.bold span{display:inline-block;margin-right:20px;}
+.main .content .chara dl dd.text{text-indent:0;}
+.main .content .chara dl dt span{line-height:30px;color:#000000;font-size:16px;
+		font-weight:normal;}
+.main .content .chara dl dt i,.main .content .chara dl dd i{text-indent:33px;line-height:30px;
+color:#000000;font-size:16px;font-style:inherit;font-weight:bold;}
+
+/*断点-----------------------------  <  -- 1000px ----------------------------------------*/
+@media screen and (max-width:1000px ) {
+	.main{margin-top:0;}
+}

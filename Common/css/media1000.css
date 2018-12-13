@@ -1,0 +1,17 @@
+/*断点----------------------------------- 760px  --- 1000px  ------------------------------------------------------------------*/
+@media screen and (min-width: 760px) and (max-width: 1000px) {
+	/*头部*/
+	.max-width{position:static;}
+	.head{max-width:970px;padding:0 35px;}
+	.head h1{width:151px;height:42px;}
+	.head h1 img{width:151px;height:42px;}
+	.head .nav{display:none;}
+	.head p{display:block;}
+
+/*footer脚部开始*/
+	.footer .footer-min{width:97%;max-width:970px;}
+	.footer .footer-min li{width:50%;line-height:31px;position:relative;padding-top:17px;padding-bottom:0;}
+	.footer .footer-min li:nth-of-type(2n-1){padding-left:16.8%;box-sizing:border-box;}
+	.footer .footer-min li:nth-of-type(3),.footer .footer-min li:nth-of-type(4){padding-bottom:12px;}
+
+}

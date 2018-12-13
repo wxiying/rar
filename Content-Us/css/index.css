@@ -1,0 +1,19 @@
+.main{margin-top:80px;padding:0 15px 30px 15px;}
+.main dt{line-height:64px;font-size:18px;color:#fa9634;text-align:center;font-weight:bold;}
+.main dd{line-height:26px;font-size:22px;color:#000000;text-align:center;font-weight:bold;}
+.main dd br{display:none;}
+.main dd:nth-last-of-type(2){font-weight:normal;font-size:16px;margin-bottom:38px;}
+.main dd.img{width:66.9%;max-width:669px;margin:0 auto;}
+.main dd.img img{width:100%;height:100%;}
+
+/*断点-----------------------------  <  -- 1000px ----------------------------------------*/
+@media screen and (max-width:1000px ) {
+	.main{margin-top:0;}
+}
+/*断点-----------------------------  <  -- 1000px ----------------------------------------*/
+@media screen and (min-width:300px) and (max-width:480px ) {
+	.main{margin-top:0;padding-bottom:110px;}
+	.main dd.img{width:100%;/*max-width:433px;*/margin:0 auto;}
+	.main dd br{display:block;}
+	.main dd span{display:none;}
+}

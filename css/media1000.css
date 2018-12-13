@@ -1,0 +1,61 @@
+/*断点----------------------------------- 760px  --- 1000px  ------------------------------------------------------------------*/
+@media screen and (min-width: 760px) and (max-width: 1000px) {
+	/*头部*/
+	.max-width{position:static;}
+	.head{max-width:970px;padding:0 35px;}
+	.nav-hidden li.active a{
+		color: #fd982c;
+	background: rgba(255, 255, 255, .2);
+}
+	.head .nav{display:none;}
+	.head p{display:block;}
+	.head p:last-of-type{display:inline-block;}
+	.m{  margin-top:0;}
+	/*学院服务*/
+	.service-min{width:97%;max-width:970px;margin:0 auto;padding:0;}
+	.service-min h2{font-size:3em;}
+	.service-min ul li{padding-bottom:12px;}
+	.service-min ul li .service_right{padding-left:14px;transition:all .2s;}
+	/*课程设置*/
+	.course .course-min{width:97%;max-width:970px;padding:0;margin:0 auto;transition:all .5s;}
+	.course .course-min h2{font-size:3em;}
+	.course .course-min ul li:hover .next{opacity:0;}
+	/*campus校园风采开始*/
+	.campus{width:100%;padding-top:8px;}
+	.campus .campus-min{width:97%;max-width:970px;margin:0 auto;}
+	.campus .campus-min h2{line-height:87px;font-size:2.9em;}
+	.campus .campus-min ul li{width:30.927895%;margin-right:2.886597%;}
+	.campus .campus-min ul li:nth-of-type(3n){margin-right:1.443298%;}
+	.campus .campus-min ul li a>p img{width:100%;height:100%;}
+	.campus .campus-min ul li .bot{padding:18px 0 27px 0;}
+	.campus .campus-min ul li .bot h3{line-height:37px;font-size:17px;color:#32342f;}
+	.campus .campus-min ul li .bot p{line-height:28px;color:#7a8380;font-size:12px;}
+/*works学生作品*/
+	.works .works-min{width:97%;max-width:970px;}
+	.works .works-min h2{line-height:87px;font-size:2.9em;}
+	.works .works-min ul li div.works-bot{display:none;}
+/*Star明星学子开始*/
+	.star .star-min{width:97%;max-width:970px;}
+	.star .star-min h2{line-height:87px;font-size:2.9em;}
+	.star .star-min ul li .star-bot{display:none;}
+/*Employment就业单位开始*/
+	.ment .ment-min{width:97%;max-width:970px;}
+	.ment .ment-min h2{line-height:105px;font-size:36px;color:#000104;margin-top:11px;}
+/*footer脚部开始*/
+	.footer .footer-min{width:97%;max-width:970px;}
+	.footer .footer-min li{width:50%;line-height:31px;position:relative;padding-top:17px;padding-bottom:0;}
+	.footer .footer-min li:nth-of-type(2n-1){padding-left:16.8%;box-sizing:border-box;}
+	.footer .footer-min li:nth-of-type(3),.footer .footer-min li:nth-of-type(4){padding-bottom:12px;}
+
+}
+                            /*加断点三campus下*/
+@media screen and (min-width:760px ) and (max-width:960px) {
+	.campus .campus-min ul li{width:31.258064%;margin-right:15px;}
+	.campus .campus-min ul li:nth-of-type(3n){margin-right:0;}
+	.campus .campus-min ul li a>p img{width:100%;height:100%;}
+}
+                           /*断点加一*/
+@media screen and (min-width:761px ) and (max-width:990px) {
+	.service-min ul li .service_right>span{width:100%;display:inline-block;white-space:nowrap;text-overflow:ellipsis;
+			overflow:hidden;padding-right:5px;box-sizing:border-box;}
+}

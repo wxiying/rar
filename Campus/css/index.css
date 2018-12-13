@@ -1,0 +1,44 @@
+.m-max{display:none;}
+/*banner小图*/
+.m{ width:679px; height:440px;margin-left: auto; margin-right: auto;margin-bottom:20px; }
+.m img{ width:100%;height:400px;}
+
+
+.main{max-width:1030px;margin:0 auto;display:flex;padding:40px 15px 0 15px;margin-top:80px;}
+.main #list{width:29.504854%;border-right:1px solid #bababa;padding-right:17px;box-sizing:border-box;
+		height:476px;}
+.main #list li{border-bottom:4px solid transparent;line-height:72px;cursor:pointer;}
+.main #list li a{color:#222222;font-size:22px;}
+.main #list li span{display:inline-block;width:40px;height:24px;margin:0 10px 0 7.8125%;position:relative;}
+.main #list li i{font-style:inherit;}
+
+.main #list li span img{position:absolute;left:0;top:0;}
+.main #list li span img:last-of-type{opacity:0;}
+
+/*active  normal*/
+.main #list li.active{border-bottom:4px solid #fa9634;}
+.main #list li.active span img:last-of-type{opacity:1;}
+.normal{border-bottom:4px solid transparent;}
+
+/*鼠标经过*/
+.main #list li:hover{border-bottom:4px solid #fa9634;}
+.main #list li:hover span img:last-of-type{opacity:1;}
+
+.main .content{width:84.300970%;padding-left:45px;box-sizing:border-box;padding-bottom:79px;padding-top:4px;}
+.main .content p{text-indent:32px;font-size:16px;color:#000000;line-height:30px;box-sizing:border-box;}
+.main .content .one p img{width:100%;}
+
+/*断点---------------------------------- <-- 1040px-------------------------------------------------------------*/
+@media screen and (max-width:1039px) {
+	.m-max{ width: 100%; height:auto;margin-left: auto; margin-right: auto; display:block;}
+	.m-max img{ width:100%;}
+	.content .m{display: none;}
+	.main{padding-bottom:40px;margin-top:0;}
+}
+/*断点---------------------------------- 766px-- 1000px-------------------------------------------------------------*/
+@media screen and (min-width:766px ) and (max-width:1000px) {
+	.main{padding:40px 0 60px 0;margin-top:0;}
+	.main #list{width:36.504854%;}
+	.main #list li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+	.main #list li a{color:#222222;font-size:20px;}
+}

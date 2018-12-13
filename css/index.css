@@ -1,0 +1,448 @@
+/*banner图开始*/
+
+.m {
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+}
+
+.m img {
+	width: 100%;
+}
+
+
+/*banner图结束*/
+
+
+/*学院服务开始*/
+
+.service-min h2 {
+	line-height: 66px;
+	margin: 30px 0 44px 0;
+}
+
+.service-min ul {
+	width: 100%;
+	display: flex;
+	box-sizing: border-box;
+}
+
+.service-min ul li {
+	width: 25%;
+	display: flex;
+	padding-bottom: 35px;
+	border-bottom: 5px solid transparent;
+	position: relative;
+}
+
+.service-min ul li a {
+	width: 100%;
+	display: block;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: transparent;
+	z-index:2;
+}
+
+.service-min ul li p {
+	width: 34.883720%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.service-min ul li p img {
+	position: absolute;
+	left: 13.883%;
+	top: 0;
+}
+
+.service-min ul li:nth-of-type(2) p img {
+	position: absolute;
+	left: 33.883%;
+	top: 0;
+}
+
+.service-min ul li p img:last-of-type {
+	opacity: 0;
+}
+
+.service-min ul li .service_right {
+	width: 66.11628%;
+	box-sizing: border-box;
+	padding-left: 19px;
+}
+
+.service-min ul li .service_right h3 {
+	line-height: 25px;
+	color: #1b1c20;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 9px;
+}
+
+.service-min ul li .service_right>span {
+	line-height: 14px;
+	color: #80888b;
+	font-size: 14px;
+}
+
+.service-min ul li:hover {
+	border-bottom: 5px solid #fa9634;
+}
+
+.service-min ul li:hover img:last-of-type {
+	opacity: 1;
+}
+
+
+/*学院服务结束*/
+
+
+/*course课程设置开始*/
+
+.course .course-min ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.course .course-min ul li {
+	width: 33.333%;
+	border: 1px solid #dedede;
+	box-sizing: border-box;
+	position: relative;
+	cursor: pointer;
+	padding-bottom: 20px;
+}
+
+.course .course-min ul li a>p {
+	display: block;
+	margin: 17px auto;
+	width: 37.735%;
+}
+
+.course .course-min ul li a>p img {
+	width: 100%;
+}
+
+.course .course-min ul li a>h3 {
+	font-size: 23px;
+	color: #00000c;
+	text-align: center;
+	font-weight: normal;
+	line-height: 23px;
+}
+
+.course .course-min ul li .next {
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: opacity .5s;
+	background: #91be69;
+}
+
+.course .course-min ul li:nth-of-type(2n) .next {
+	background: #fd8f30;
+}
+
+.course .course-min ul li .next h3 {
+	line-height: 23px;
+	font-size: 23px;
+	margin-top: 35px;
+	margin-bottom: 12px;
+	color: #ffffff;
+	text-indent: 21px;
+}
+
+.course .course-min ul li .next p {
+	line-height: 22px;
+	font-size: 14px;
+	padding: 0 21px;
+	color: #fffada;
+}
+
+.course .course-min ul li:hover .next {
+	opacity: 1;
+}
+
+
+/*course课程设置结束*/
+
+
+/*campus校园风采开始*/
+
+.campus .campus-min h2 span {
+	line-height: 70px;
+	font-size: 15px;
+	float: right;
+	color: #ff9173;
+	margin-top: 34px;
+}
+
+.campus .campus-min ul {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.campus .campus-min ul li {
+	width: 30%;
+	margin-right: 5%;
+}
+
+.campus .campus-min ul li>a p {
+	width: 100%;
+	transition: all .3s ease-in;
+	/*height:100%;*/
+	overflow:hidden;
+}
+
+.campus .campus-min ul li>a p img {
+	width: 100%;
+	height: 100%;
+	transition:all .5s;
+}
+.campus .campus-min ul li:hover>a p img {
+	transform:scale(1.2,1.2);
+}
+
+.campus .campus-min ul li:nth-of-type(3n) {
+	margin-right: 0;
+}
+
+.campus .campus-min ul li .bot {
+	padding: 18px 0 33px 0;
+}
+
+.campus .campus-min ul li .bot h3 {
+	line-height: 37px;
+	font-size: 17px;
+	color: #32342f;
+}
+
+.campus .campus-min ul li .bot p {
+	line-height: 30px;
+	color: #7a8380;
+	font-size: 12px;
+}
+
+
+/*campus校园风采结束*/
+
+
+/*works学生作品开始*/
+
+.works .works-min ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.works .works-min ul li {
+	width: 20%;
+	cursor: pointer;
+	position: relative;
+}
+
+
+/*12.6*/
+
+.works .works-min ul li.overfir {
+	display: none;
+}
+
+.works .works-min ul li img {
+	width: 100%;
+}
+
+.works .works-min ul li div.works-bot {
+	width: 100%;
+	height:100%;
+	background: rgba(244, 117, 6, 0);
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*padding: 22px 0 10px 0;*/
+	transition: all .3s;
+}
+
+.works .works-min ul li div.works-bot h3 {
+	line-height: 59px;
+	color: transparent;
+	font-size: 2.4em;
+	text-align: center;
+	font-weight: bold;
+	margin-top:20px;
+}
+
+.works .works-min ul li div.works-bot span {
+	display: block;
+	line-height: 51px;
+	color: transparent;
+	font-size: 17px;
+	text-align: center;
+}
+
+.works .works-min ul li div.works-bot p {
+	line-height: 52px;
+	color: transparent;
+	font-size: 18px;
+	text-align: center;
+}
+
+.works .works-min ul li:hover div.works-bot {
+	width: 100%;
+	background: rgba(244, 117, 6, 0.8);
+}
+
+.works .works-min ul li:hover div.works-bot h3 {
+	animation: name .8s;
+	color: #ffffff;
+}
+
+.works .works-min ul li:hover div.works-bot span {
+	animation: name .8s;
+	color: #ffffff;
+}
+
+.works .works-min ul li:hover div.works-bot p {
+	animation: name .8s;
+	color: #ffffff;
+}
+
+@-webkit-keyframes name {
+	0% {
+		color: transparent;
+	}
+	25% {
+		color: transparent;
+	}
+	75% {
+		color: #rgba(255, 255, 255, .5);
+	}
+	100% {
+		color: #ffffff;
+	}
+}
+
+.works .works-min #btn-sec {
+	margin-top: 3px;
+}
+
+
+/*works学生作品结束*/
+
+
+/*Star明星学子开始*/
+
+.star .star-min ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.star .star-min ul li {
+	width: 24.2%;
+	margin-right: 1%;
+	margin-bottom: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.star .star-min ul li img {
+	width: 100%;
+}
+
+.star .star-min ul li:nth-of-type(4n) {
+	margin-right: 0;
+}
+
+.star .star-min ul li .star-bot {
+	width: 100%;
+	height:100%;
+	background: #90c166;
+	color: #ffffff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*padding: 17px 0 15px 0;*/
+	opacity: 0;
+}
+
+.star .star-min ul li .star-bot span {
+	display: block;
+	line-height: 53px;
+	font-size: 17px;
+	text-align: center;
+	margin-top:17px;
+}
+
+.star .star-min ul li .star-bot p {
+	line-height: 43px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.star .star-min ul li .star-bot h3 {
+	line-height: 64px;
+	font-size: 23px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.star .star-min ul li:hover .star-bot {
+	opacity: 1;
+}
+
+
+/*Star明星学子结束*/
+
+
+/*Employment就业单位开始*/
+
+.ment .ment-min ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ment .ment-min ul li {
+	width: 15.8%;
+	margin-right: 1%;
+	margin-bottom: 10px;
+}
+
+.ment .ment-min ul .overfour {
+	display: none;
+}
+
+.ment .ment-min ul li img {
+	width: 100%;
+}
+
+.ment .ment-min ul li:nth-of-type(6n) {
+	margin-right: 0;
+}
+
+.ment .ment-min ul li:nth-last-of-type(2) {
+	margin-right: 1%;
+}
+
+.ment .ment-min ul li:nth-last-of-type(7) {
+	margin-right: 0;
+}
+
+.ment .ment-min ul li:nth-last-of-type(8) {
+	margin-right: 1%;
+}
+
+.ment .ment-min ul li:nth-last-of-type(1) {
+	margin-right: 0;
+}
+
+
+/*Employment就业单位结束*/
+
+

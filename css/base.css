@@ -1,0 +1,401 @@
+body,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,
+header,footer,section,nav,aside,figure,figcaption,article,hgroup,dialog,menu,nav{
+	margin:0;
+	padding: 0;
+}
+ul,ol{
+	list-style: none;
+}
+ul,li,form,label,p,ol,ul,li,h1,h2,h3,h4,h5,h6,
+header,footer,section,nav,aside,figure,figcaption,article,hgroup,dialog,nav{
+	display: block;
+/*h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+	font-size: 100%;*/
+	/*子元素继承父元素的字号,由于标题标签比较特殊,不能继承父复盒子的字号,加上font-size:100%就可以继承*/
+}
+p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,li{
+	display: block;
+	font-weight:normal;
+}
+img{
+	/*解决3px留白问题*/
+	display: block;
+}
+a{
+	text-decoration: none;
+	/*font-size:62.5%;*/
+}
+.clearfix:after{
+		height: 0;
+		line-height: 0;
+		content: "";
+		visibility: hidden;
+		clear: both;
+		display: block;
+}
+/*------首页样式----------*/
+/*字体*/
+body{font-family:"microsoft yahei";font-size:62.5%;
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+		overflow-x:hidden;}
+
+
+
+/*百分百大盒子*/
+section{width:100%;}
+section>div{width:97.3333333333%;max-width:1000px;margin:0 auto;box-sizing:border-box;padding:0 15px;}
+ h2{line-height:105px;color:#000305;font-size:36px;}
+ 
+ /*-------------------------------头部和尾部-----------------------------------*/
+ /*-------------------------------头部和尾部-----------------------------------*/
+.max-width {
+	width: 100%;
+	background: #2e2f2a;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+}
+
+.head {
+	max-width: 1000px;
+	margin: 0 auto;
+	min-width: 300px;
+	position: relative;
+}
+
+.head h1 {
+	float: left;
+	height: 58px;
+	margin: 10px 0 8px 0;
+	width: 171px;
+}
+
+.head h1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.head .nav {
+	float: right;
+	padding-right: 19px;
+}
+
+.head .nav li {
+	float: left;
+	height: 80px;
+	line-height: 80px;
+}
+
+.head .nav li a {
+	display: block;
+	padding: 0 18px;
+	color: #fffbec;
+	font-size: 1.4em;
+}
+.head .nav li.active a{
+	background: rgba(255, 255, 255, .2);
+}
+.head .nav li a:hover {
+	background: rgba(255, 255, 255, .2);
+}
+
+
+/*按钮正常显示*/
+
+.head p {
+	display: none;
+	float: right;
+}
+
+.head p:first-of-type {
+	font-size: 4.2em;
+	color: #fff3ff;
+	height: 80px;
+	line-height: 80px;
+	position: absolute;
+	left: 50%;
+    top: 0;
+    transform: translate(-50%,0);
+	font-family: simsun;
+}
+
+.head #menu {
+	/*width: 120px;
+	height: 40px;*/
+	padding: 0 14px;
+	border: 1px solid #666666;
+	border-radius: 3px;
+	margin-top: 19px;
+	font-size: 17px;
+	color: #fdfffc;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.head p:last-of-type:hover {
+	background: rgba(255, 255, 255, .2);
+}
+
+.head p:last-of-type span {
+	display: inline-block;
+	width: 25px;
+	height: 3px;
+	background: #fdfffc;
+	margin-left: 12px;
+	position: relative;
+	margin-bottom: 3px;
+}
+
+.head p:last-of-type span::before {
+	display: block;
+	width: 25px;
+	height: 3px;
+	content: '';
+	background: #fdfffc;
+	position: absolute;
+	left: 0;
+	top: -8px;
+}
+
+.head p:last-of-type span::after {
+	display: block;
+	width: 25px;
+	height: 3px;
+	content: '';
+	background: #fdfffc;
+	position: absolute;
+	left: 0;
+	top: 8px;
+}
+
+
+/*隐藏导航显示*/
+
+.nav-hidden {
+	width: 100%;
+	border: 3px solid #cccccc;
+	border-left: 0;
+	border-right: 0;
+	background: #2e2f2a;
+	display: none;
+}
+
+.nav-hidden li {
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	width: calc(12.5% - 10px);
+	margin-right: 10px;
+}
+
+.nav-hidden li:last-of-type {
+	width: 12.5%;
+	margin-right: 0;
+}
+
+.nav-hidden li a {
+	color: #f9fafe;
+	font-size: 16px;
+	display: block;
+	text-align: center;
+}
+
+.nav-hidden li a:hover {
+	color: #fd982c;
+	background: rgba(255, 255, 255, .2);
+}
+
+
+
+/*footer脚部开始*/
+.footer{width:100%;background:#333333;}
+.footer .footer-min{width:97.333333333%;max-width:1000px;margin:0 auto;color:#f6fffa;font-size:1.2em;display:flex;flex-wrap:wrap;margin-top:43px;}
+.footer .footer-min li{width:25%;line-height:31px;padding:48px 0;}
+.footer .footer-min li:nth-of-type(3) a{width:77px;height:22px;display:inline-block;vertical-align:middle;}
+/*footer脚部结束*/
+ 
+ 
+     /*全部按钮      “  查看更多  ”       样式*/
+.campus .campus-min #btn,.works .works-min #btn_sec,.star .star-min #btn_third,.ment .ment-min #btn_four
+		{display:none;width:113px;height:35px;background:#fa9634;margin:0 auto;border:0;cursor:pointer;
+		border-radius:3px;font-size:14px;color:#ffffff;line-height:35px;text-align:center;}
+/*-----------------------------------侧面弹窗-----------------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.slider7 img{
+	min-height: 150px;
+}
+#up{
+	display: none;
+	width:50px;
+	height: 50px;
+	background: #fa9634;
+	position: fixed;
+	right: 0;
+	bottom: 31%;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#up span{
+		border-radius: 5px;
+	display:block;
+	width: 20px;
+	height: 20px;
+	border: 6px solid #fff;
+	border-bottom: transparent;
+	border-right: transparent;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-30%) rotate(45deg);
+	
+}
+/*=========================================在线客服============================*/
+.aside_online{
+	position:fixed;
+	top:220px;
+	right:-145px;
+	z-index:1111111;
+}
+.aside_title{
+	cursor:pointer;
+	margin-top:100px;
+	width:40px;
+	height:133px;
+	float:left;
+	background:url(../img/open_im.png) no-repeat 0 0;
+	margin-right:5px;
+}
+.online{
+	/*width:120px;*/
+	float:left;
+	background:#79ccc0;
+	border-radius:17px;
+	padding:10px 10px 18px 10px;
+	position:relative;
+}
+.online div{
+	background:#ffffff;
+	padding:0px 10px;
+	margin-bottom:9px;
+	border-radius:17px;
+	border:#000000px solid #d6eceb;
+	padding-bottom:20px;
+}
+.online div:nth-of-type(1){
+	padding-top:22px;
+	padding-bottom:20px;
+}
+.online div:nth-of-type(2){
+	padding-top:12px;
+	padding-bottom:8px;
+	margin-bottom:6px;
+}
+.online div:nth-of-type(3){
+	width:89px;
+	margin:0 auto;
+	text-align:center;
+	margin-bottom:0px;
+	border-radius:0;
+	padding:6px 6px 0 6px;
+}
+.online div h2{
+	height:35px;
+	line-height:35px;
+	width:97px;
+	text-align:center;
+	border-bottom:2px solid #6ec3ba;
+}
+.online div h2{
+	font-size:18px;
+	color:#25939f;
+	font-family:simhei;
+}
+.online div p{
+	font-size:14px;
+	color:#1e1e1e;
+	font-family:simhei;
+}
+.online div p a{
+	display:block;
+}
+.online div:nth-of-type(1) p a{
+	height:36px;
+	line-height:36px;
+	padding-left:28px;
+	background:url(../img/info_03.jpg) no-repeat 2px center;
+	border-bottom:2px solid #6ec3ba;
+}
+.online div:nth-of-type(2) p{
+	text-align:center;
+	font-size:16px;
+	color:#1e1e1e;
+	height:30px;
+	line-height:30px;
+}
+.online div:nth-of-type(3) p{
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	font-weight:bold;
+	color:#25939f;
+}
+.online div p:hover a{
+	color:red;
+}
+.online small{
+	cursor:pointer;
+	position:absolute;
+	width:30px;
+	height:30px;
+	background:#ffffff;
+	border:2px solid #79ccc0;
+	border-radius:50%;
+	text-align:center;
+	line-height:26px;
+	top:-15px;
+	left:52px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:"microsoft yahei";
+	color:#79ccc0;
+	box-shadow:0 3px 3px #000000;
+}
+.aside_online .upSlide{
+	width:89px;
+	margin:0 auto;
+	text-align:center;
+	margin-top:8px;
+	border-radius:0;
+	padding:6px 6px 0 6px;
+	cursor:pointer;
+}
+.aside_online .upSlide span{
+	display:block;
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	text-align:center;
+	font-size:30px;
+	font-weight:bolder;
+	transform:rotate(270deg);
+	font-family:simhei;
+}
+.max-fixed{width:100%;position:fixed;left:0;bottom:0;display:none;overflow:hidden;background:#FFFfFF;
+		z-index:99;}
+.nav-down{width:100%;margin:0 auto;display:flex;}
+.nav-down li{width:20%;padding-bottom:3px;}
+.nav-down li a{display:block;line-height:20px;font-size:10px;color:#C0C0C0;text-align:center;}
+.nav-down li span{display:block;width:40.333333%;height:25px;margin:0 auto;margin-top:8px;
+		background:url(../img/tubiao.png) no-repeat -34px -63px;border-radius:7px;}
+.nav-down li:nth-of-type(2) span{background-position:-86px -63px;}
+.nav-down li:nth-of-type(3) span{background-position:-86px -122px;}
+.nav-down li:nth-of-type(4) span{background-position:-136px -123px;}
+.nav-down li:nth-of-type(5) span{background-position:-188px -61px;}
+.nav-down li.back{background:green;opacity:.5;}
+/*.nav-down li.back a{color:;}*/
+/*.nav-down li:hover{background:green;opacity:.5;}*/
+/*.nav-down li:hover a{color:white;}*/

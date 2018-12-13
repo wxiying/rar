@@ -1,0 +1,66 @@
+.container{max-width:1030px;margin:0 auto;padding:40px 15px 0 15px;margin-top:80px;/*height:3970px;*/}
+.container .pubuliu h2{line-height:70px;font-size:30px;color:gray;text-align:center;}
+.container .pubuliu h3{line-height:60px;font-size:24px;color:#C0C0C0;text-align:center;}
+.container ul li>img{display:none;}
+.container ul li .intr{font-size:14px;color:#888888;height:780px;}
+.container ul li .intr article{text-indent:28px;line-height:24px;padding:16px 13px 0 0;}
+.container ul li .intr h3{line-height:24px;font-size:19px;font-weight:bold;margin-top:6px;text-indent:0;}
+.container ul li .intr span{line-height:24px;}
+
+/*断点-----------------------------  <  -- 1000px ----------------------------------------*/
+@media screen and (max-width:1000px ) {
+	.container{margin-top:0;}
+}
+
+/*----------------------------------------------师资力量小屏弹窗-------------------------------------*/
+#box{
+				width:100%;
+				height:100%;
+				position:fixed;
+				top:0;
+				left:0;
+				z-index:111;
+				background:rgba(11,11,11,0.5);	
+				display:none;
+			}
+			#box>.intr{
+				padding: 20px;
+				position:fixed !important;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width:80% !important;
+				background: #fff;
+				box-shadow: 0 0 10px #000000;
+				z-index: 2;
+			}
+			#box>.intr img{
+				display: block;
+				width: 100px;
+				margin: 10px;
+				float: right;
+			}
+			#box>.intr article{
+				color: #888;
+			    line-height: 24px;
+			    padding-top: 16px;
+			    text-indent: 28px;
+			    font-size: 14px;
+			}
+			#box>.intr article h3{
+				text-indent: 0;
+				display: block;
+			    font-size: 18px;
+			    font-weight: bold;
+			    color: #888;
+			    margin:0;
+			    margin-top: 5px;
+			}	
+.online div:nth-of-type(3){
+	width:101px;
+	margin:0 auto;
+	text-align:center;
+	margin-bottom:0px;
+	border-radius:0;
+	padding:6px 6px 0 6px;
+}

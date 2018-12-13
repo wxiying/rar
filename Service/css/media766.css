@@ -1,0 +1,20 @@
+/*断点-------------------------------------- 480px -- 766px --------------------------------------------------------------------------------*/
+@media screen and (min-width:480px ) and (max-width:766px) {
+	.main{display:flex;flex-wrap:wrap;padding-top:30px;}
+	.main #list{width:100%;display:flex;height:94px;margin-bottom:10px;border:0;padding-right:0;}
+	.main #list li{width:50%;text-align:center;line-height:65px;font-size:1.9em;}
+	.main #list li span{display:block;margin:0 auto;}
+	.main .content{width:100%;padding:0;padding-bottom:38px;}
+	.main .content .chara dl dd.bold{text-indent:0;font-size:18px;}
+	
+	/*active  normal*/
+	.main #list li.active{border-bottom:4px solid #fa9634;}
+	.main #list li.active span img:last-of-type{opacity:1;}
+	.normal{border-bottom:4px solid transparent;}
+	
+	/*鼠标经过*/
+	.main #list li:hover{border-bottom:4px solid transparent;}
+	.main #list li:hover span img:last-of-type{opacity:0;}
+	.main #list li.active:hover span img:last-of-type{opacity:1;}
+	
+}

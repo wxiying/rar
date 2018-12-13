@@ -1,0 +1,10 @@
+/*断点-------------------------------------- 480px -- 766px --------------------------------------------------------------------------------*/
+@media screen and (min-width:480px ) and (max-width:766px) {
+	.container{margin-top:0;padding:46px 0 0 0;}
+	.container ul li{margin-bottom:5px;}
+	.container ul li>img{display:block;}
+	.container ul li .intr{display:none;}
+	.container >.pubuliu span {
+	padding: 17px 0 1.0em 0.1em;
+}
+}

@@ -1,0 +1,23 @@
+/*断点--------------------------------------------  480px  -----  760px  -------------------------------------------------------*/
+@media screen and (min-width: 480px) and (max-width: 760px){
+	/*头部*/
+	.max-width{position:static;}
+	.head{max-width:730px;padding:0 23px;}
+	.head h1{width:151px;height:38px;margin:12px 0 10px 0;}
+	.head h1 img{width:121px;height:38px;}
+	.head .nav{display:none;}
+	.head p{display:block;}
+	.head p:first-of-type{font-size:26px;height:60px;line-height:60px;}
+	.head #menu{width:102px;font-size:12px;height:30px;line-height:30px;cursor:pointer;margin-top:10px;}
+	/*隐藏导航显示*/
+	.nav-hidden{display:flex;flex-wrap:wrap;display:none;}
+	.nav-hidden li{width:25%;margin:0;height:40px;line-height:40px;}
+	.nav-hidden li:last-of-type{width:25%;margin:0;}
+	
+/*footer脚部开始*/
+	.footer{margin-top:43px;}
+	.footer .footer-min{width:97%;max-width:730px;}
+	.footer .footer-min li{width:50%;line-height:31px;position:relative;padding-top:17px;padding-bottom:0;}
+	.footer .footer-min li:nth-of-type(2n-1){width:42.739726%;padding-left:7.371%;box-sizing:border-box;}
+	.footer .footer-min li:nth-of-type(3),.footer .footer-min li:nth-of-type(4){padding-bottom:12px;}
+}
